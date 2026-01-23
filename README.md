@@ -1,5 +1,5 @@
-# Crejaud.github.io 
+# crejaud.github.io 
 # Corentin Rejaud's Website
 
-Custom url: http://www.corentinrejaud.com
+Custom url: https://www.corentinrejaud.com
 
