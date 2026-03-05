@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corentin R&eacute;jaud</title>
-    <link href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="images/hair-logo.ico">
 </head>
 
 <body>
-    <div class="nav">
+    <nav class="nav" id="navbar">
         <div class="container">
             <ul class="pull-left">
                 <li><a href="#about-me">About Me</a></li>
@@ -20,541 +25,560 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#courses">Courses</a></li>
             </ul>
-            <li><img src="images/hair-logo.png" width="45" height="56" /></li>
+            <li class="nav-logo"><img src="images/hair-logo.png" width="45" height="56" alt="Logo" /></li>
             <ul class="pull-right">
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
         </div>
-    </div>
+    </nav>
 
-    <a name="about-me"></a>
-    <div class="jumbotron">
+    <section id="about-me" class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1>About Me</h1>
-                    <h2>Corentin (Corey) R&eacute;jaud</h2>
-                    <p>Senior Software Engineer at Facebook in NYC</p>
-                    <p>Former Senior Software Engineer at Bloomberg L.P.</p>
-                    <p>Former Software Development Engineer Intern at Amazon</p>
-                    <p>Triple Major</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a name="education"></a>
-    <div id="education-background" class="scroll">
-        <div class="container">
-            <h2>
-        <center>EDUCATION</center>
-      </h2>
-        </div>
-    </div>
-
-    <div class="education">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="images/RU-logo.png" width="216" height="216" />
-                </div>
                 <div class="col-md-8">
-                    <h2>Triple Major: ECE, CS, Math</h2>
-                    <p>Bachelors of Science in E.C.E. (Focus in Computer Engineering)</p>
-                    <p>Bachelors of Science in Computer Science</p>
-                    <p>Bachelors of Science in Mathematics</p>
-                    <p><a href="http://www.newbrunswick.rutgers.edu/">Rutgers University-New Brunswick</a>; May 2017; New Brunswick, NJ</p>
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Corentin (Corey) R&eacute;jaud</h1>
+                    <div class="title-divider"></div>
+                    <p class="tagline">Founder & Software Engineer at a Stealth Company</p>
+                    <p class="subtitle">Former Staff Software Engineer at Meta</p>
+                    <p class="subtitle">Former Senior Software Engineer at Bloomberg L.P.</p>
+                    <p class="subtitle">Triple Major: ECE, CS, Math</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <a name="skills"></a>
-    <div id="skills-background" class="scroll">
-        <div class="container">
-            <h2>
-        <center>SKILLS</center>
-      </h2>
+    <section id="education">
+        <div class="section-header">
+            <h2>Education</h2>
         </div>
-    </div>
-
-    <div class="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Programming</h3>
-                    <p>Java, Kotlin, C, C++, Python, Assembly (MIPS & x86), SQL, Javascript (Ajax, JQuery, Jasmine), SystemVerilog, CUDA (PTX ISA), MATLAB, XML, JSON, Scheme, Bash, HTML, CSS, Ruby on Rails, Datalog</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Software/Tools Known</h3>
-                    <p>Android, Unity, Firebase, UNIX (VIM), Git, Mercurial, TitanDB, DynamoDB, S3, PostgreSQL, Comdb2, QtSpim, ModelSim, Spim-Cache, Maple</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Electronics/Design</h3>
-                    <p>Raspberry Pi 2, Filter Design, Digital System Design, Digital Logic Design, Circuit Design, Transistors (MOSFET & BJT), [Zener, Shottky] Diodes, Oscilloscope, Function Generator</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Computer Aided Design</h3>
-                    <p>OrCAD, PSPICE, Quartus, Rhinoceros, Google SketchUp, AutoCAD, Blender</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Math Concepts</h3>
-                    <p>Cryptography, Linear Algebra, Linear Programming/Optimization, Quantum Mechanics, Number Theory, Calculus 1-5, Relational Algebra, Fourier Transforms & Series (Continuous & Discrete time), Laplace Transform, Z Transform, Real Analysis</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Spoken Languages</h3>
-                    <p>French and English</p>
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img src="images/RU-logo.png" class="edu-logo" alt="Rutgers University" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Triple Major: ECE, CS, Math</h3>
+                        <p>Bachelors of Science in E.C.E. (Focus in Computer Engineering)</p>
+                        <p>Bachelors of Science in Computer Science</p>
+                        <p>Bachelors of Science in Mathematics</p>
+                        <p><a href="http://www.newbrunswick.rutgers.edu/">Rutgers University-New Brunswick</a> &mdash; May 2017 &mdash; New Brunswick, NJ</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <a name="experience"></a>
-    <div id="experience-background" class="scroll">
-        <div class="container">
-            <h2>
-                <center>EXPERIENCE</center>
-            </h2>
+    <section id="skills">
+        <div class="section-header">
+            <h2>Skills</h2>
         </div>
-    </div>
-
-    <div class="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Senior Software Engineer</h3>
-                    <p><a href="https://www.facebook.com/">Facebook</a> - New York, NY - May, 2021 to Present</p>
-                    <p>Facebook Reality Labs</p>
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3><i class="fas fa-code"></i> Programming</h3>
+                            <p>Java, Kotlin, C, C++, Python, Assembly (MIPS & x86), SQL, Javascript (Ajax, JQuery, Jasmine), SystemVerilog, CUDA (PTX ISA), MATLAB, XML, JSON, Scheme, Bash, HTML, CSS, Ruby on Rails, Datalog</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3><i class="fas fa-toolbox"></i> Software/Tools</h3>
+                            <p>Android, Unity, Firebase, UNIX (VIM), Git, Mercurial, TitanDB, DynamoDB, S3, PostgreSQL, Comdb2, QtSpim, ModelSim, Spim-Cache, Maple</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Senior Software Engineer</h3>
-                    <p><a href="https://www.bloomberg.com/">Bloomberg L.P.</a> - New York, NY - June, 2017 to April, 2021</p>
-                    <p>Data License Reference Data: Owns enterprise level products so that technical clients can access financial information programmatically as opposed to manually querying data through the Bloomberg Terminal.</p>
-                    <p>Lead, designed, and implemented third-party alternative dataset generation workflows (Health Care, Energy, Filing Insights, etc) using Celery, RabbitMQ and Kafka. <a href="https://www.businessinsider.com/bloomberg-launching-alternative-data-platform-2019-2">See article written on this project</a></p>
-                    <p>Lead, designed, and implemented fundamentals finance dataset generation workflows (Revenue, Assets, Profitability, etc) using Celery, RabbitMQ, Kafka, Hbase, Pheonix, and Spark. Optimized CPU usage by 20x and run-time by 100x for filtering billions of datapoints per day. Scaled run-time performance of generating 500 datasets from 8 days to 2 hours.</p>
-                    <p>Lead, designed, and implemented the revamping of a billion dollar product to use more modern technologies such as Celery, RabbitMQ, Parquet, Hbase, Pheonix and Spark. Improved performance </p>
-                    <p>Lead and implemented migration of high-value legacy C++ tasks from AIX & Solaris to linux. This lowered machine costs & leveraged newer microservice infrastructures.</p>
-                    <p>Assume multiple leadership roles such as Post-Mordem Triage, Scrum Master, Multiple Project Leads and Mentorships.</p>
-                    <p>Implement & maintain python workflows to access different categories of data such as Corporate Actions and Historical Data using Celery & RabbitMQ.</p>
-                    <p>Maintain and extend C++/C/Fortran products which generate billions in revenue per year.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3><i class="fas fa-microchip"></i> Electronics/Design</h3>
+                            <p>Raspberry Pi 2, Filter Design, Digital System Design, Digital Logic Design, Circuit Design, Transistors (MOSFET & BJT), [Zener, Shottky] Diodes, Oscilloscope, Function Generator</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3><i class="fas fa-drafting-compass"></i> Computer Aided Design</h3>
+                            <p>OrCAD, PSPICE, Quartus, Rhinoceros, Google SketchUp, AutoCAD, Blender</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Software Development Engineer Intern</h3>
-                    <p><a href="http://www.amazon.com/">Amazon</a> - Seattle, WA - June, 2016 to August, 2016</p>
-                    <p>Amazon Fulfillment Technologies (AFT): Owns all of the software and infrastructure which powers Amazon's world-class fulfillment engine.</p>
-                    <p>Integrated Query Path Filtering into the main APIs to give clients additional context on the path’s behavior.</p>
-                    <p>Integrated Query Path Validation into the main APIs through machine learning using a Finite State Machine.</p>
-                    <p>Wrote a script to automate validation on large chunks of the graph when there is low volume on ING’s APIs.</p>
-                    <p>Used Titan Graph Database as well as Amazon’s Dynamo and S3 databases.</p>
-                    <p>Worked in Java and XML</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Software Developer Intern</h3>
-                    <p><a href="http://www.seniorlink.com/">Seniorlink - Vayu Technology</a> - Springfield Township, NJ - May, 2015 to Present</p>
-                    <p>Worked on an Android application to provide a virtual care room for caregivers and patients to interact with doctors and specialists, record medical history, and much more. Uses REST API, Encryption, and JSON parsing. Written in Java
-                        and XML.</p>
-                    <p>Created a web page to save video, audio, and photos from the device's camera and microphone. Works for both mobile (Android, iOS) and desktops. Uses the Mobile Camera API and the Navigator.getUserMedia API. Written in HTML, CSS, Javascript,
-                        and optional PHP to store it to a server.</p>
-                    <p>Created an Administrative Interface that enables easy system level configurations. Displays tables from Seniorlink's database such as Electronic Medical Records, Care Plans and SMS. Lets the administrator modify database attributes
-                        easily. Written in Ruby on Rails using Active Admin.
-                        <p>
-                            <p>Started the development of Javascript Unit Testing using Jasmine. Wrote over 500 tests and continuing to expand it. Written in Javascript(JQuery and Ajax) using Jasmine.</p>
-                            <p>Worked in Java, XML, HTML, CSS, Javascript(JQuery, Ajax, and Jasmine), Ruby on Rails, SQL.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Student Assistant</h3>
-                    <p><a href="http://www.libraries.rutgers.edu/annex">Rutgers Library Annex</a> - Piscataway, NJ - September, 2013 to May, 2014</p>
-                    <p>Working at the Library Annex in Rutgers University-New Brunswick.</p>
-                    <p>Dealt with shipping, maintaining, imaging and wiping computer for the university libraries.</p>
-                    <p>Maintained inventory and made Ethernet cords for the university libraries.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3><i class="fas fa-square-root-variable"></i> Math Concepts</h3>
+                            <p>Cryptography, Linear Algebra, Linear Programming/Optimization, Quantum Mechanics, Number Theory, Calculus 1-5, Relational Algebra, Fourier Transforms & Series (Continuous & Discrete time), Laplace Transform, Z Transform, Real Analysis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h3><i class="fas fa-language"></i> Spoken Languages</h3>
+                            <p>French and English</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <a name="projects"></a>
-    <div id="projects-background" class="scroll">
-        <div class="container">
-            <h2>
-          <center>PROJECTS</center>
-        </h2>
+    <section id="experience">
+        <div class="section-header">
+            <h2>Experience</h2>
         </div>
-    </div>
-
-    <div class="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="images/GitHub-Mark-120px-plus.png" width="120" height="120" />
-                    <p>Want to see more?</p>
-                    <p><a href="https://www.github.com/Crejaud">Visit me on Github!</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Chibi Companion <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Android Application with 6,500+ Installations.</p>
-                    <p>An Android Application for a card game called Munchkin that keeps track of info during the game, helping the game become more time efficient and convenient.</p>
-                    <p>Coded in Android Studio using Java and XML.</p>
-                    <p>Team of 2</p>
-                    <p>Summer 2014</p>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.crejaud.jrejaud.munchkincompanion&hl=en">Install Munchkin Companion</a></p>
-                    <p><a href="https://github.com/Crejaud/MunchkinCompanion">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>CleverObjects <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Android Wear Application with 300+ Installations.</p>
-                    <p>CleverObjects lets you control your Smart Things switches and locks using voice command or buttons on your android wear watch.</p>
-                    <p>Coded in Android Studio using Java and XML.</p>
-                    <p>Team of 2</p>
-                    <p>Summer 2014</p>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.crejaud.jrejaud.cleverobjects&hl=en">Install CleverObjects</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Five Point Oh <img src="images/google-chrome-logo.png" width="40" height="40"/></h3>
-                    <p>Google Chrome Extension with 4000+ Weekly Users.</p>
-                    <p>Placed in top 5 projects and won category for Best Rutgers Hack at HackRU Spring 2015.</p>
-                    <p>This extension interacts with the WebReg site, the Schedule of Classes site, and the Course Schedule Planner site. It places an instructors average RateMyProfessor score directly next to their name, and displays their score breakdown
-                        when the user hovers their mouse over the average score. This allows students to easily gain feedback on their professors, quickly.</p>
-                    <p>Now uses our own API and Database written in Ruby (Sinatra) to collect score ratings.</p>
-                    <p>New Features: Rate a professor right next to where their score is displayed.</p>
-                    <p>Coded using JavaScript (Ajax, JQuery), Ruby (Sinatra), HTML and CSS</p>
-                    <p>Team of 3</p>
-                    <p>Spring 2015</p>
-                    <p><a href="http://www.dailytargum.com/article/2016/04/rutgers-students-create-rate-my-professor-webreg-extension">This project was featured on the front-page of the Rutgers University Official Newspaper</a></p>
-                    <p><a href="https://chrome.google.com/webstore/detail/five-point-oh-a-webreg-ex/fogbelnmmmobcpblgeafgneoafglfppm">Install Five Point Oh</a></p>
-                    <p><a href="https://github.com/HackRU-Team-1/Webreg-Extension">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Five Point Oh <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Android Application</p>
-                    <p>An addition to the Five Point Oh Chrome Extension.</p>
-                    <p>Search for professors and rate them.</p>
-                    <p>Now uses our own API and Database written in Ruby (Sinatra) to collect score ratings.</p>
-                    <p>Coded using Java, XML, and Ruby (Sinatra)</p>
-                    <p>Spring 2016</p>
-                    <p><a href="#">Install Five Point Oh</a></p>
-                    <p><a href="#">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Djdj <img src="images/html5-css-javascript-logos.png" width="103" height="40"/> <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Website Application and Android Application</p>
-                    <p>HackRU Spring 2016 Project</p>
-                    <p>Login through Spotify authentication, add a list of other Spotify users, select a mood, and Djdj will use it's algorithm in addition to the Spotify and Last.FM APIs to generate a Spotify playlist that will be most accurately liked
-                        by all users.</p>
-                    <p>Uses our own database written in Ruby (Sinatra) to store playlist information for cross-user login.</p>
-                    <p>Useful for parties and group hangouts!</p>
-                    <p>Coded using Ruby (Sinatra), JavaScript, HTML, and CSS</p>
-                    <p>Spring 2016</p>
-                    <p><a href="#">Use Djdj (Not available yet)</a></p>
-                    <p><a href="#">View Source (Github Repository)</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Tech World Clicker <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Android Application</p>
-                    <p>STILL A WORK IN PROGRESS.</p>
-                    <p>Uses Google's Firebase Real-Time Database and Authentication as well as multi-threading.</p>
-                    <p>Collaborative online incremental clicker game.</p>
-                    <p>Create your own company, play with your friends online, click to earn currency, hire employees to earn currency over time, use abilities, customize your company’s traits, and much more!</p>
-                    <p>Coded using Java, XML.</p>
-                    <p>Summer 2016</p>
-                    <p><a href="#">Install Tech World Clicker (Not yet available)</a></p>
-                    <p><a href="https://github.com/Crejaud/Tech_Company_Clicker">View Source (Github Repository) (CURRENTLY PRIVATE)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Ready Check <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Android Application</p>
-                    <p>An automatic real-time survey that can be initiated by a member of a group to check if a group is ready.</p>
-                    <p>Uses Google's Firebase Real-Time Database and Authentication as well as Google Cloud Messaging.</p>
-                    <p>Built a Node.js server to handle push notifications to notify users that a ready check has been initiated.</p>
-                    <p>Coded using Java, XML.</p>
-                    <p>Fall 2016</p>
-                    <p><a href="#">Install Ready Check (Not yet available)</a></p>
-                    <p><a href="https://github.com/GooeyBar/ReadyCheck-FB">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Designer's Portfolio Website <img src="images/html5-logo.png" width="40" height="40"/></h3>
-                    <p>Portfolio website for a designer using an <a href="http://html5up.net/">HTML5 UP</a> Template.</p>
-                    <p>Displays the designer's projects.</p>
-                    <p>Coded using HTML5 and CSS3.</p>
-                    <p>Fall 2015</p>
-                    <p><a href="http://www.bethanywelgoss.com">View her website</a></p>
-                    <p><a href="https://github.com/Munchkin-Scottish-Fold/Munchkin-Scottish-Fold.github.io">View Source (Github Repository)</a></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Android Chess <img src="images/android-logo.png" width="40" height="40"/></h3>
-                    <p>Software Methodology Project</p>
-                    <p>2-player chess using inheritance and serializability in Android Studio.</p>
-                    <p>Move pieces using click-to-move or drag-and-drop.</p>
-                    <p>Includes all legitimate moves for all pieces including Castling, Enpassant, and Promotion.</p>
-                    <p>Identification of check, checkmate, illegal moves, resign, draw, and stalemate.</p>
-                    <p>Can record chess matches and let's the user playback previous games to analyse them.</p>
-                    <p>Coded using Java and XML</p>
-                    <p>Spring 2016</p>
-                    <p><a href="https://github.com/Crejaud/AndroidChess">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>PintOS <img src="images/c-logo.png" width="40" height="40"/></h3>
-                    <p>Operating Systems Project</p>
-                    <p>Implemented Multi-threading using Priority Scheduling and Priority Donation. Removed busy waiting in the timer sleep function.</p>
-                    <p>Implemented User Programs using Process Termination, Argument Passing, System Calls, and Denying Writes to Executables.</p>
-                    <p>Implemented the File System including mountables (USB, SD Card, etc).</p>
-                    <p>Coded using C.</p>
-                    <p>Spring 2016</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Yabe <img src="images/sql-logo.png" width="40" height="40"/> <img src="images/html5-css-javascript-logos.png" width="103" height="40"/> <img src="images/java-logo.png" width="80" height="40"/></h3>
-                    <p>Principles to Information and Data Management Project</p>
-                    <p>Auction Site similar to Ebay but more precise.</p>
-                    <p>Sells different smart phones: iOS, Android, Windows, Amazon Fire.</p>
-                    <p>User login and user creation included.</p>
-                    <p>End-Users - Create and search auctions. Bid on auctions.</p>
-                    <p>Automatic bidding functionality.
-                        <p>
-                            <p>Customer Representatives - An administrator that manages auctions and tickets.</p>
-                            <p>Administrative Staff - Creates administrators and generates summary sales reports.</p>
-                            <p>Coded using SQL, JavaScript, Java Service Pages, HTML, and CSS.</p>
-                            <p>Spring 2016</p>
-                            <p><a href="https://github.com/Crejaud/Yabe">View Source (Github Repository)</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Compiler and Optimizer for tinyL <img src="images/c-logo.png" width="40" height="40"/></h3>
-                    <p>Principles of Programming Languages Project</p>
-                    <p>Created LL1 compiler to convert tinyL to ILOC assembly code.</p>
-                    <p>Created an optimizer to optimize ILOC assembly code.</p>
-                    <p>Coded using C.</p>
-                    <p>Fall 2015</p>
-                    <p><a href="https://github.com/Crejaud/Principles-Of-Programming-Languages/tree/master/TinyL_Compiler">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Spell Checker Generator using Bloom Filters <img src="images/lambda-logo.png" width="40" height="40"/></h3>
-                    <p>Principles of Programming Languages Project</p>
-                    <p>Implemented infrastructure that allows the user to create and experiment with different spell checkers that are based on hash functions.</p>
-                    <p>Functional Programming.</p>
-                    <p>Coded using Scheme.</p>
-                    <p>Fall 2015</p>
-                    <p><a href="https://github.com/Crejaud/Principles-Of-Programming-Languages/tree/master/Scheme_Spell_Checker">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Parallelizing a Spell Checker using OpenMP <img src="images/c-logo.png" width="40" height="40"/></h3>
-                    <p>Principles of Programming Languages Project</p>
-                    <p>Using OpenMP, parallelize a spell checker in C.</p>
-                    <p>Parallel Programming.</p>
-                    <p>Coded using OpenMP.</p>
-                    <p>Fall 2015</p>
-                    <p><a href="https://github.com/Crejaud/CS-314_Principles-Of-Programming-Languages/tree/master/Parallelize_Spell_Checker">View Source (Github Repository)</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Text-Based Chess <img src="images/java-logo.png" width="80" height="40"/></h3>
-                    <p>Software Methodology Project</p>
-                    <p>Text-based 2-player chess using inheritance, interfaces, and lambda in Eclipse.</p>
-                    <p>All legitimate basic moves for all pieces including Castling, Enpassant, and Promotion.</p>
-                    <p>Identification of check, checkmate, illegal moves, resign, draw, and stalemate.</p>
-                    <p>Includes Javadoc.</p>
-                    <p>Coded using Java.</p>
-                    <p>Spring 2016</p>
-                    <p><a href="https://github.com/Crejaud/CS-213_Software-Methodology/tree/master/TextBasedChess">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Photo Album <img src="images/java-logo.png" width="80" height="40"/></h3>
-                    <p>Software Methodology Project</p>
-                    <p>GUI in Eclipse.</p>
-                    <p>Create, Delete, Rename, Open, and Search through Albums.</p>
-                    <p>User login (including Administrative Accounts).</p>
-                    <p>Premeditation using UML diagrams.</p>
-                    <p>Includes Javadoc.</p>
-                    <p>Coded using JavaFX.</p>
-                    <p>Spring 2016</p>
-                    <p><a href="https://github.com/Crejaud/CS-213_Software-Methodology/tree/master/PhotoAlbum">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Song Library <img src="images/java-logo.png" width="80" height="40"/></h3>
-                    <p>Software Methodology Project</p>
-                    <p>GUI in Eclipse.</p>
-                    <p>Add, delete, and edit songs.
-                    <p>
-                    <p>Songs are saved to a text file for future use.</p>
-                    <p>Includes Javadoc.</p>
-                    <p>Coded using JavaFX.</p>
-                    <p>Spring 2016</p>
-                    <p><a href="#">Download this Song Library</a></p>
-                    <p><a href="https://github.com/Crejaud/CS-213_Software-Methodology/tree/master/SongLib">View Source (Github Repository)</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Combinational Circuit Simulator <img src="images/c-logo.png" width="40" height="40"/></h3>
-                    <p>Computer Architecture Project</p>
-                    <p>Read from two text files and simulate a combinational circuit using a tree-like data structure.</p>
-                    <p>One text file is the input, the other is the schematics for the combinational circuit.</p>
-                    <p>Coded using C.</p>
-                    <p>Spring 2015</p>
-                    <p><a href="https://github.com/Crejaud/Computer-Architecture/tree/master/Combinational%20Circuit%20Simulator%20(pa4)">View Source (Github Repository)</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Hash table with Linked Lists <img src="images/c-logo.png" width="40" height="40"/></h3>
-                    <p>Computer Architecture Project</p>
-                    <p>Read millions of lines from a text file and insert into a hash table of size 1000 with Linked Lists to prevent collisions.</p>
-                    <p>Elegantly only roughly 50 lines if comments are taken out. No memory leaks.</p>
-                    <p>Coded using C.</p>
-                    <p>Spring 2015</p>
-                    <p><a href="https://github.com/Crejaud/Computer-Architecture/tree/master/Hash%20Table%20(pa2)/count">View Source (Github Repository)</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Star Wars X-Wing 3D Model <img src="images/rhino-logo.png" width="40" height="40"/></h3>
-                    <p>Made in Rhinoceros 3.0.</p>
-                    <p>Spring 2013</p>
-                    <p><a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48c2xVYVRnTmFxeU0&usp=sharing">Learn More about this 3D Model</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Nintendo WiiMote 3D Model <img src="images/rhino-logo.png" width="40" height="40"/></h3>
-                    <p>Made in Rhinoceros 3.0.</p>
-                    <p>Summer 2011</p>
-                    <p><a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48b2U1Z211RVRIQW8&usp=sharing">Learn More about this 3D Model</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>House 3D Model <img src="images/sketchup-logo.png" width="45" height="40"/></h3>
-                    <p>Made in Google SketchUp</p>
-                    <p>Spring 2013</p>
-                    <p><a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48RlJ0RUxzSEF4cHc&usp=sharing">Learn More about this 3D Model</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Tic Tac Toe <img src="images/java-logo.png" width="80" height="40"/></h3>
-                    <p>Tic Tac Toe program using Java Swing GUI in Eclipse.</p>
-                    <p>Spring 2012</p>
-                    <p><a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48c1FOUlcxSUE1dkE&usp=sharing">Learn More about this Tic Tac Toe Program</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Time Incrementer <img src="images/java-logo.png" width="80" height="40"></h3>
-                    <p>Intern Project for Maxeta Technologies.</p>
-                    <p>Features: Standard and Military time, incrementing and decrementing.</p>
-                    <p>Coded in Eclipse using Java.</p>
-                    <p>Spring 2015</p>
-                    <p><a href="https://github.com/Crejaud/TimeIncrementer">Learn More about this Time Incrementer</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Blackjack <img src="images/java-logo.png" width="80" height="40"/></h3>
-                    <p>Blackjack program using Object-Oriented Programming.</p>
-                    <p>Features: Hit, Stand, Split, Double down, Surrender, Scrolling text.</p>
-                    <p>Coded in Eclipse using Java.</p>
-                    <p>Spring 2013</p>
-                    <p><a href="https://github.com/Crejaud/BlackJack">Learn More about this Blackjack Program</a></p>
+        <div class="section-content">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Founder & Software Engineer</h3>
+                            <p class="company">Stealth Company &mdash; January, 2026 to Present</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Staff Software Engineer</h3>
+                            <p class="company"><a href="https://www.meta.com/">Meta</a> &mdash; New York, NY &mdash; May, 2021 to August, 2025</p>
+                            <p>Reality Labs</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior Software Engineer</h3>
+                            <p class="company"><a href="https://www.bloomberg.com/">Bloomberg L.P.</a> &mdash; New York, NY &mdash; June, 2017 to April, 2021</p>
+                            <p>Data License Reference Data: Owns enterprise level products so that technical clients can access financial information programmatically as opposed to manually querying data through the Bloomberg Terminal.</p>
+                            <p>Lead, designed, and implemented third-party alternative dataset generation workflows (Health Care, Energy, Filing Insights, etc) using Celery, RabbitMQ and Kafka. <a href="https://www.businessinsider.com/bloomberg-launching-alternative-data-platform-2019-2">See article written on this project</a></p>
+                            <p>Lead, designed, and implemented fundamentals finance dataset generation workflows (Revenue, Assets, Profitability, etc) using Celery, RabbitMQ, Kafka, Hbase, Pheonix, and Spark. Optimized CPU usage by 20x and run-time by 100x for filtering billions of datapoints per day. Scaled run-time performance of generating 500 datasets from 8 days to 2 hours.</p>
+                            <p>Lead, designed, and implemented the revamping of a billion dollar product to use more modern technologies such as Celery, RabbitMQ, Parquet, Hbase, Pheonix and Spark.</p>
+                            <p>Lead and implemented migration of high-value legacy C++ tasks from AIX & Solaris to linux. This lowered machine costs & leveraged newer microservice infrastructures.</p>
+                            <p>Assume multiple leadership roles such as Post-Mordem Triage, Scrum Master, Multiple Project Leads and Mentorships.</p>
+                            <p>Implement & maintain python workflows to access different categories of data such as Corporate Actions and Historical Data using Celery & RabbitMQ.</p>
+                            <p>Maintain and extend C++/C/Fortran products which generate billions in revenue per year.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Development Engineer Intern</h3>
+                            <p class="company"><a href="http://www.amazon.com/">Amazon</a> &mdash; Seattle, WA &mdash; June, 2016 to August, 2016</p>
+                            <p>Amazon Fulfillment Technologies (AFT): Owns all of the software and infrastructure which powers Amazon's world-class fulfillment engine.</p>
+                            <p>Integrated Query Path Filtering into the main APIs to give clients additional context on the path's behavior.</p>
+                            <p>Integrated Query Path Validation into the main APIs through machine learning using a Finite State Machine.</p>
+                            <p>Wrote a script to automate validation on large chunks of the graph when there is low volume on ING's APIs.</p>
+                            <p>Used Titan Graph Database as well as Amazon's Dynamo and S3 databases.</p>
+                            <p>Worked in Java and XML</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Developer Intern</h3>
+                            <p class="company"><a href="http://www.seniorlink.com/">Seniorlink - Vayu Technology</a> &mdash; Springfield Township, NJ &mdash; May, 2015 to Present</p>
+                            <p>Worked on an Android application to provide a virtual care room for caregivers and patients to interact with doctors and specialists, record medical history, and much more. Uses REST API, Encryption, and JSON parsing. Written in Java and XML.</p>
+                            <p>Created a web page to save video, audio, and photos from the device's camera and microphone. Works for both mobile (Android, iOS) and desktops. Written in HTML, CSS, Javascript, and optional PHP.</p>
+                            <p>Created an Administrative Interface that enables easy system level configurations. Displays tables from Seniorlink's database. Written in Ruby on Rails using Active Admin.</p>
+                            <p>Started the development of Javascript Unit Testing using Jasmine. Wrote over 500 tests and continuing to expand it.</p>
+                            <p>Worked in Java, XML, HTML, CSS, Javascript (JQuery, Ajax, and Jasmine), Ruby on Rails, SQL.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Student Assistant</h3>
+                            <p class="company"><a href="http://www.libraries.rutgers.edu/annex">Rutgers Library Annex</a> &mdash; Piscataway, NJ &mdash; September, 2013 to May, 2014</p>
+                            <p>Working at the Library Annex in Rutgers University-New Brunswick.</p>
+                            <p>Dealt with shipping, maintaining, imaging and wiping computer for the university libraries.</p>
+                            <p>Maintained inventory and made Ethernet cords for the university libraries.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <a name="courses"></a>
-    <div id="s1" class="scroll">
-        <div class="container">
-            <h2>
-              <center>NOTABLE COURSES</center>
-            </h2>
+    <section id="projects">
+        <div class="section-header">
+            <h2>Projects</h2>
         </div>
-    </div>
-
-    <div class="courses">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Electrical and Computer Engineering</h3>
-                    <ul>
-                        <p><a href="http://soe.rutgers.edu/oas/440courses">Introduction to Computers for Engineers (MATLAB)</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_231">Digital Logic Design</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_221">Principles of Electrical Engineering I</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_222">Principles of Electrical Engineering II</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_345">Linear Systems and Signals</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_361">Electronic Devices</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_366">Digital Electronics</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/files/pdf/under/ug_course_descriptions/332-434-Syllabus-IntroductiontoComputerSystems.pdf">Introduction to Computer Systems (Operating Systems)</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_437">Digital System Design</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/files/pdf/under/ug_course_descriptions_2012/451-Parallel-Dist-Prog-Parashar.pdf">Introduction to Parallel and Distributed Programming</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/files/pdf/under/ug_course_descriptions/332-453-Mobile-App.pdf">Mobile App Engineering and User Experience</a></p>
-                        <p><a href="http://www.ece.rutgers.edu/332_456">Network Centric Programming</a></p>
-                    </ul>
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card text-center">
+                            <img src="images/GitHub-Mark-120px-plus.png" width="80" height="80" alt="GitHub" />
+                            <h3>Want to see more?</h3>
+                            <p><a href="https://www.github.com/Crejaud">Visit me on Github!</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Chibi Companion <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>Android Application with 6,500+ Installations.</p>
+                            <p>An Android Application for a card game called Munchkin that keeps track of info during the game, helping the game become more time efficient and convenient.</p>
+                            <p class="tech-stack">Java, XML &mdash; Team of 2 &mdash; Summer 2014</p>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.crejaud.jrejaud.munchkincompanion&hl=en">Install</a>
+                                <a href="https://github.com/Crejaud/MunchkinCompanion">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>CleverObjects <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>Android Wear Application with 300+ Installations.</p>
+                            <p>CleverObjects lets you control your Smart Things switches and locks using voice command or buttons on your android wear watch.</p>
+                            <p class="tech-stack">Java, XML &mdash; Team of 2 &mdash; Summer 2014</p>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.crejaud.jrejaud.cleverobjects&hl=en">Install</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h3>Mathematics</h3>
-                    <ul>
-                        <p><a href="http://www.math.rutgers.edu/courses/151/">Calculus I</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/152/">Calculus II</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/300/">Math Reasoning</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/251/">Multi-variable Calculus</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/244/">Differential Equations</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/250/">Intro to Linear Algebra</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/350/">Linear Algebra</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/354/">Linear Optimization</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/421/">Advanced Calculus for Engineering</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/356/">Theory of Numbers</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/311/">Intro to Real Analysis I</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/325/">Foundations of Quantum Mechanics</a></p>
-                        <p><a href="http://www.math.rutgers.edu/courses/348/">Cryptography</a></p>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Five Point Oh <img src="images/google-chrome-logo.png" width="28" height="28" alt="Chrome" /></h3>
+                            <p>Google Chrome Extension with 4000+ Weekly Users.</p>
+                            <p>Placed in top 5 projects and won category for Best Rutgers Hack at HackRU Spring 2015.</p>
+                            <p>This extension places an instructor's average RateMyProfessor score directly next to their name on WebReg, Schedule of Classes, and Course Schedule Planner.</p>
+                            <p class="tech-stack">JavaScript, Ruby (Sinatra), HTML, CSS &mdash; Team of 3 &mdash; Spring 2015</p>
+                            <div class="project-links">
+                                <a href="http://www.dailytargum.com/article/2016/04/rutgers-students-create-rate-my-professor-webreg-extension">Press</a>
+                                <a href="https://chrome.google.com/webstore/detail/five-point-oh-a-webreg-ex/fogbelnmmmobcpblgeafgneoafglfppm">Install</a>
+                                <a href="https://github.com/HackRU-Team-1/Webreg-Extension">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Five Point Oh <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>Android Application</p>
+                            <p>An addition to the Five Point Oh Chrome Extension. Search for professors and rate them.</p>
+                            <p class="tech-stack">Java, XML, Ruby (Sinatra) &mdash; Spring 2016</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Djdj <img src="images/html5-css-javascript-logos.png" width="72" height="28" alt="Web" /> <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>HackRU Spring 2016 Project</p>
+                            <p>Login through Spotify, add other Spotify users, select a mood, and Djdj generates a Spotify playlist liked by all users. Useful for parties and group hangouts!</p>
+                            <p class="tech-stack">Ruby (Sinatra), JavaScript, HTML, CSS &mdash; Spring 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Tech World Clicker <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>Collaborative online incremental clicker game using Google's Firebase Real-Time Database and Authentication.</p>
+                            <p>Create your own company, play with friends online, click to earn currency, hire employees, use abilities, and more!</p>
+                            <p class="tech-stack">Java, XML &mdash; Summer 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/Tech_Company_Clicker">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Ready Check <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>An automatic real-time survey that can be initiated by a member of a group to check if a group is ready.</p>
+                            <p>Uses Google's Firebase Real-Time Database and Authentication as well as Google Cloud Messaging with a Node.js server for push notifications.</p>
+                            <p class="tech-stack">Java, XML &mdash; Fall 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/GooeyBar/ReadyCheck-FB">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Designer's Portfolio <img src="images/html5-logo.png" width="28" height="28" alt="HTML5" /></h3>
+                            <p>Portfolio website for a designer using an HTML5 UP Template. Displays the designer's projects.</p>
+                            <p class="tech-stack">HTML5, CSS3 &mdash; Fall 2015</p>
+                            <div class="project-links">
+                                <a href="http://www.bethanywelgoss.com">Visit</a>
+                                <a href="https://github.com/Munchkin-Scottish-Fold/Munchkin-Scottish-Fold.github.io">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Android Chess <img src="images/android-logo.png" width="28" height="28" alt="Android" /></h3>
+                            <p>2-player chess in Android Studio with drag-and-drop, all legitimate moves including Castling, Enpassant, and Promotion. Record and playback games.</p>
+                            <p class="tech-stack">Java, XML &mdash; Spring 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/AndroidChess">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>PintOS <img src="images/c-logo.png" width="28" height="28" alt="C" /></h3>
+                            <p>Implemented Multi-threading with Priority Scheduling and Donation. Implemented User Programs with System Calls. Implemented the File System including mountables.</p>
+                            <p class="tech-stack">C &mdash; Spring 2016</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Yabe <img src="images/sql-logo.png" width="28" height="28" alt="SQL" /> <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>Auction site similar to Ebay. User login, auction creation, bidding, automatic bidding, admin tools, and sales reports.</p>
+                            <p class="tech-stack">SQL, JavaScript, Java Service Pages, HTML, CSS &mdash; Spring 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/Yabe">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Compiler for tinyL <img src="images/c-logo.png" width="28" height="28" alt="C" /></h3>
+                            <p>Created LL1 compiler to convert tinyL to ILOC assembly code. Created an optimizer to optimize ILOC assembly code.</p>
+                            <p class="tech-stack">C &mdash; Fall 2015</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/Principles-Of-Programming-Languages/tree/master/TinyL_Compiler">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Bloom Filter Spell Checker <img src="images/lambda-logo.png" width="28" height="28" alt="Scheme" /></h3>
+                            <p>Infrastructure for creating and experimenting with different spell checkers based on hash functions. Functional Programming.</p>
+                            <p class="tech-stack">Scheme &mdash; Fall 2015</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/Principles-Of-Programming-Languages/tree/master/Scheme_Spell_Checker">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Parallel Spell Checker <img src="images/c-logo.png" width="28" height="28" alt="C" /></h3>
+                            <p>Using OpenMP, parallelize a spell checker in C. Parallel Programming.</p>
+                            <p class="tech-stack">OpenMP, C &mdash; Fall 2015</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/CS-314_Principles-Of-Programming-Languages/tree/master/Parallelize_Spell_Checker">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Text-Based Chess <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>Text-based 2-player chess using inheritance, interfaces, and lambda. All legitimate moves including Castling, Enpassant, Promotion.</p>
+                            <p class="tech-stack">Java &mdash; Spring 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/CS-213_Software-Methodology/tree/master/TextBasedChess">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Photo Album <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>GUI application. Create, Delete, Rename, Open, and Search Albums. User login with Admin accounts. UML-designed.</p>
+                            <p class="tech-stack">JavaFX &mdash; Spring 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/CS-213_Software-Methodology/tree/master/PhotoAlbum">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Song Library <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>GUI application. Add, delete, and edit songs. Songs saved to file for persistence.</p>
+                            <p class="tech-stack">JavaFX &mdash; Spring 2016</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/CS-213_Software-Methodology/tree/master/SongLib">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Circuit Simulator <img src="images/c-logo.png" width="28" height="28" alt="C" /></h3>
+                            <p>Read from text files and simulate a combinational circuit using a tree-like data structure.</p>
+                            <p class="tech-stack">C &mdash; Spring 2015</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/Computer-Architecture/tree/master/Combinational%20Circuit%20Simulator%20(pa4)">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Hash Table <img src="images/c-logo.png" width="28" height="28" alt="C" /></h3>
+                            <p>Read millions of lines and insert into a hash table of size 1000 with Linked Lists. Elegantly ~50 lines, no memory leaks.</p>
+                            <p class="tech-stack">C &mdash; Spring 2015</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/Computer-Architecture/tree/master/Hash%20Table%20(pa2)/count">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>X-Wing 3D Model <img src="images/rhino-logo.png" width="28" height="28" alt="Rhino" /></h3>
+                            <p>Made in Rhinoceros 3.0.</p>
+                            <p class="tech-stack">Spring 2013</p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48c2xVYVRnTmFxeU0&usp=sharing">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>WiiMote 3D Model <img src="images/rhino-logo.png" width="28" height="28" alt="Rhino" /></h3>
+                            <p>Made in Rhinoceros 3.0.</p>
+                            <p class="tech-stack">Summer 2011</p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48b2U1Z211RVRIQW8&usp=sharing">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>House 3D Model <img src="images/sketchup-logo.png" width="32" height="28" alt="SketchUp" /></h3>
+                            <p>Made in Google SketchUp.</p>
+                            <p class="tech-stack">Spring 2013</p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48RlJ0RUxzSEF4cHc&usp=sharing">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Tic Tac Toe <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>Tic Tac Toe program using Java Swing GUI.</p>
+                            <p class="tech-stack">Java &mdash; Spring 2012</p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/folderview?id=0B-BSL7qsFA48c1FOUlcxSUE1dkE&usp=sharing">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Time Incrementer <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>Intern Project for Maxeta Technologies. Standard and Military time, incrementing and decrementing.</p>
+                            <p class="tech-stack">Java &mdash; Spring 2015</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/TimeIncrementer">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <h3>Blackjack <img src="images/java-logo.png" width="56" height="28" alt="Java" /></h3>
+                            <p>Blackjack with Hit, Stand, Split, Double down, Surrender, and scrolling text.</p>
+                            <p class="tech-stack">Java &mdash; Spring 2013</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Crejaud/BlackJack">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Computer Science</h3>
-                    <ul>
-                        <p><a href="https://www.cs.rutgers.edu/course/data-structures">Data Structures</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/introduction-to-discrete-structures-i">Discrete Structures I</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/introduction-to-discrete-structures-ii">Discrete Structures II</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/computer-architecture">Computer Architecture</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/principles-of-programming-languages">Principles of Programming Languages</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/principles-of-information-and-data-management">Principles of Information and Data Management</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/software-methodology">Software Methodology</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/design-and-analysis-computer-algorithms">Design and Analysis of Computer Algorithms</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/software-engineering">Software Engineering</a></p>
-                        <p><a href="https://www.cs.rutgers.edu/course/compilers">Compilers</a></p>
-                    </ul>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="section-header">
+            <h2>Notable Courses</h2>
+        </div>
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h3>Electrical & Computer Engineering</h3>
+                            <ul class="course-list">
+                                <li><a href="http://soe.rutgers.edu/oas/440courses">Intro to Computers for Engineers (MATLAB)</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_231">Digital Logic Design</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_221">Principles of EE I</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_222">Principles of EE II</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_345">Linear Systems and Signals</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_361">Electronic Devices</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_366">Digital Electronics</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/files/pdf/under/ug_course_descriptions/332-434-Syllabus-IntroductiontoComputerSystems.pdf">Intro to Computer Systems (OS)</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_437">Digital System Design</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/files/pdf/under/ug_course_descriptions_2012/451-Parallel-Dist-Prog-Parashar.pdf">Parallel and Distributed Programming</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/files/pdf/under/ug_course_descriptions/332-453-Mobile-App.pdf">Mobile App Engineering & UX</a></li>
+                                <li><a href="http://www.ece.rutgers.edu/332_456">Network Centric Programming</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h3>Mathematics</h3>
+                            <ul class="course-list">
+                                <li><a href="http://www.math.rutgers.edu/courses/151/">Calculus I</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/152/">Calculus II</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/300/">Math Reasoning</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/251/">Multi-variable Calculus</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/244/">Differential Equations</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/250/">Intro to Linear Algebra</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/350/">Linear Algebra</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/354/">Linear Optimization</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/421/">Advanced Calculus for Engineering</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/356/">Theory of Numbers</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/311/">Intro to Real Analysis I</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/325/">Foundations of Quantum Mechanics</a></li>
+                                <li><a href="http://www.math.rutgers.edu/courses/348/">Cryptography</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h3>Computer Science</h3>
+                            <ul class="course-list">
+                                <li><a href="https://www.cs.rutgers.edu/course/data-structures">Data Structures</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/introduction-to-discrete-structures-i">Discrete Structures I</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/introduction-to-discrete-structures-ii">Discrete Structures II</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/computer-architecture">Computer Architecture</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/principles-of-programming-languages">Principles of Programming Languages</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/principles-of-information-and-data-management">Info and Data Management</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/software-methodology">Software Methodology</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/design-and-analysis-computer-algorithms">Design and Analysis of Algorithms</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/software-engineering">Software Engineering</a></li>
+                                <li><a href="https://www.cs.rutgers.edu/course/compilers">Compilers</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <a name="contact"></a>
-    <div id="s1" class="scroll">
-        <div class="container">
-            <h2>
-                <center>CONTACT</center>
-            </h2>
+    <section id="contact">
+        <div class="section-header">
+            <h2>Contact</h2>
         </div>
-    </div>
-
-    <div class="contact">
-        <div class="container">
-            <h3>You can contact me <a href="mailto:crejaud@gmail.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=crejaud@gmail.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">via Email</a></h3>
-            <h3>Connect with me on <a href="https://www.linkedin.com/in/crejaud">LinkedIn</a></h3>
-            <h3>View my projects on <a href="https://github.com/Crejaud">GitHub</a></h3>
-            <small> &copy; 2021 Corentin Rejaud</small>
+        <div class="section-content contact-section">
+            <div class="container text-center">
+                <div class="contact-links">
+                    <a href="mailto:crejaud@gmail.com" class="contact-item" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=crejaud@gmail.com','_blank');return false;">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/crejaud" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Crejaud" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <small>&copy; 2026 Corentin Rejaud</small>
+            </div>
         </div>
-    </div>
+    </section>
 
 </body>
 
